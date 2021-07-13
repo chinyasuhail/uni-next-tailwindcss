@@ -11,7 +11,7 @@ module.exports = {
     extend: {
       backgroundImage: theme => ({
         'hero-pattern': "url('/hero.png')",
-        'hero-pattern-sm': "url('/hero_sm.png')",
+        'hero-pattern-sm': "url('/hero_sm.webp')",
        })
 
     },
