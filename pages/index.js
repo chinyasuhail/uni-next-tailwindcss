@@ -11,27 +11,21 @@ var uni_text = {"background":"-webkit-linear-gradient(102.18deg, #15B7A8 1.92%, 
 
 const features = [
   {
-    name: 'Competitive rates',
-    description: 'Consequuntur omnis dicta cumque, inventore atque ab dolores aspernatur tempora ab doloremque.',
-    icon: GlobeAltIcon,
+    name: 'Pay In 3 Parts',
+    description: 'Pay for anything and everything and just pay 1/3rd every month. Nothing more, not even a rupee.',
+    image: '/bill.svg',
   },
   {
     name: 'No hidden fees',
     description:
       'Corporis quisquam nostrum nulla veniam recusandae temporibus aperiam officia incidunt at distinctio ratione.',
-    icon: ScaleIcon,
+      image: '/bill.svg',
   },
   {
     name: 'Instant transfers',
     description:
       'Omnis, illo delectus? Libero, possimus nulla nemo tenetur adipisci repellat dolore eligendi velit doloribus mollitia.',
-    icon: LightningBoltIcon,
-  },
-  {
-    name: 'Reminder emails',
-    description:
-      'Veniam necessitatibus reiciendis fugit explicabo dolorem nihil et omnis assumenda odit? Quisquam unde accusantium.',
-    icon: MailIcon,
+      image: '/bill.svg',
   },
 ]
 
@@ -90,8 +84,8 @@ export default function Home() {
 
 <div className="mt-36">
 
-<div className="mt-6 sm:max-w-xl">
-  <h1 className=" text-5xl text-white font-mattermedium  lg:text-7xl md:text-8xl to-purple-900">
+<div className="mt-6 sm:max-w-xl text-center">
+  <h1 className=" text-6xl text-white font-mattermedium  lg:text-7xl md:text-8xl to-purple-900">
   India's first <br></br>
 <span style={uni_text}>Pay 1/3rd </span>
 
@@ -151,7 +145,7 @@ Download App
 
 
 <div className="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-4 lg:max-w-7xl ">
-<div className="bg-white min-h-80 flex flex-col  justify-center items-left py-4 pb-20">
+<div className="bg-white min-h-80 flex flex-col  justify-center items-center py-4 pb-20">
 
 {/* BEGIN SECTION 2 INTRO TEXT */} 
 
@@ -166,10 +160,7 @@ Download App
 {unifeatures.map((unifeatures) => (
   <span key={unifeatures.id} style={uni_text}>{unifeatures.feat} <br></br></span> 
  ))}
-
-
-    
-  </div>
+</div>
 
 {/* END SECTION 2 HERO  TEXT */}   
 
@@ -180,31 +171,25 @@ Download App
 
 {/* END BEGIN SECTION 2 */}
 
+
+{/* BEGIN SECTION 3 UNI FEATURES */} 
           
-          <div className="bg-black overflow-hidden">
-      <div className="relative max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
-       
+<div className="bg-black overflow-hidden text-center min-h-48">
 
-        <div className="relative lg:grid lg:grid-cols-3 lg:gap-x-8">
+<div className="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-4 lg:max-w-7xl flex flex-col items-center py-8 ">
+  
 
-          <dl className="mt-10 space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-8 sm:gap-y-10 lg:mt-0 lg:col-span-2">
-            {features.map((feature) => (
-              <div key={feature.name}>
-                <dt>
-                  <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-200 text-black">
-                    <feature.icon className="h-6 w-6" aria-hidden="true" />
-                  </div>
-                  <p className="mt-5 text-lg leading-6 font-medium text-white">{feature.name}</p>
-                </dt>
-                <dd className="mt-2 text-base text-gray-200">{feature.description}</dd>
-              </div>
-            ))}
-          </dl>
-        </div>
+ <div>
+<img src="/bill.svg" width="250" height="250" alt="uni_card_pay_one_third_feature" className="text-center"/>
+<h1 className="text-white">Pay In 1/3rd </h1>
+
+</div>               
+</div>
+  
       </div>
     </div>
 
-        </div>
+   
 
 
 
