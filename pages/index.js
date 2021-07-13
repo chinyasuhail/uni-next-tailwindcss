@@ -42,11 +42,11 @@ export default function Home() {
 
 
 {/* BLOCK 1: BLOCK THAT ALWAYS MATHCES HEIGH OF THE SCREEN: BACKGROUND BLACK*/}
-<div className="flex flex-col bg-black min-h-screen w-screen ">
+<div className="flex flex-col bg-black min-h-screen w-screen pb-12 bg-right bg-hero-pattern bg-no-repeat bg-contain">
 
 {/* NAVBAR: NAVBAR WITH UNI LOGO : BLACK*/}
 
-<nav className="flex flex-col items-center px-6 w-screen bg-black  border-b border-gray-900 ">
+<nav className="flex flex-col items-center px-6 w-screen bg-black ">
   <img
   src="/uni.svg"
   width="107" 
@@ -74,41 +74,57 @@ Split your payments, not your dreams.
   </p>
 
 
-  <form action="#" className="mt-12 sm:max-w-lg sm:w-full sm:flex">
-                    <div className="min-w-0 flex-1">
-                      <label htmlFor="hero-email" className="sr-only">
-                        Email address
-                      </label>
-                      <input
-                        id="hero-email"
-                        type="email"
-                        className="block w-full border border-gray-300 rounded-md px-5 py-3 text-base text-gray-900 placeholder-gray-500 shadow-sm focus:border-green-500 focus:ring-green-500"
-                        placeholder="Enter Your Phone"
-                      />
-                    </div>
-                    <div className="mt-4 sm:mt-0 sm:ml-3">
-                      <button
-                        type="submit"
-                        className="block w-full rounded-md border border-transparent px-5 py-3 bg-green-600 text-base font-medium text-white shadow hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:px-10"
-                      >
-                        Download App
-                      </button>
-                    </div>
+<form action="#" className="mt-12 sm:max-w-lg sm:w-full sm:flex flex-col">
+
+
+
+<div className="min-w-0 flex-1 lg:mt-0 mb-2 ">
+<label htmlFor="hero-email" className="sr-only">
+Full Name
+</label>
+<input
+id="hero-email"
+type="number"
+maxLength="10"
+className="block w-full border bg-gray-100 focus:bg-white border-gray-300  rounded-sm  px-5 py-3 text-base text-gray-900 placeholder-gray-500 shadow-sm focus:border-green-500 focus:ring-green-500"
+placeholder="Enter Your Full Name"
+required
+/>
+</div>
+
+<div className="min-w-0 flex-1 lg:mt-0 ">
+<label htmlFor="hero-email" className="sr-only">
+Phone Number
+</label>
+<input
+id="hero-email"
+type="number"
+maxLength="10"
+className="block w-full border bg-gray-100 focus:bg-white border-gray-300 rounded-sm px-5 py-3  text-base text-gray-900 placeholder-gray-500 shadow-sm focus:border-green-500 focus:ring-green-500"
+placeholder="Enter Your Phone Number"
+required
+/>
+</div>
+
+<div className="mt-4">
+<button
+type="submit"
+className="block w-full border border-transparent rounded-sm  px-5 py-3 bg-white text-black text-base font-medium shadow hover:bg-gray-200 focus:outline-none focus:ring-2 focus:bg-gray-400 focus:ring-offset-2 sm:px-10"
+>
+Download App
+</button>
+</div>
                   </form>
 
 
   <div className="mt-6">
-                    <div className="inline-flex items-center divide-x divide-gray-300">
-                      <div className="flex-shrink-0 flex pr-5">
-                        <StarIcon className="h-5 w-5 text-yellow-400" aria-hidden="true" />
-                        <StarIcon className="h-5 w-5 text-yellow-400" aria-hidden="true" />
-                        <StarIcon className="h-5 w-5 text-yellow-400" aria-hidden="true" />
-                        <StarIcon className="h-5 w-5 text-yellow-400" aria-hidden="true" />
-
-                      </div>
+                    <div className="inline-flex items-center divide-x divide-gray-600">
+          
+                      <a href='https://play.google.com/store/apps/details?id=cards.uni.app.credit&hl=en_IN&gl=US&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png' width="150"/></a> 
+                      
                       <div className="min-w-0 flex-1 pl-5 py-1 text-sm text-gray-500 sm:py-3">
-                        <span className="font-medium text-white">Rated 4.7 stars</span> by over{' '}
-                        <span className="font-medium text-white">500 beta users</span>
+                        <span className="font-medium text-white">Rated 4.7 stars by over 500 beta users </span> 
+
                       </div>
                     </div>
                   </div>
@@ -129,91 +145,30 @@ Split your payments, not your dreams.
           
           
           
-          <div className="pt-8 overflow-hidden  ">
-            <div className="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl  bg-blue-50">
-
-              
-              <div>
-
-                <div className="mt-20">
-
-                  <div className="mt-6 sm:max-w-xl">
-                    <h1 className="text-4xl font-extrabold text-white tracking-tight sm:text-5xl">
-                      Server management for growing teams
-                    </h1>
-                    <p className="mt-6 text-xl text-gray-500">
-                      Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.
-                    </p>
-                  </div>
-                  <form action="#" className="mt-12 sm:max-w-lg sm:w-full sm:flex">
-                    <div className="min-w-0 flex-1">
-                      <label htmlFor="hero-email" className="sr-only">
-                        Email address
-                      </label>
-                      <input
-                        id="hero-email"
-                        type="email"
-                        className="block w-full border border-gray-300 rounded-md px-5 py-3 text-base text-gray-900 placeholder-gray-500 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
-                        placeholder="Enter your email"
-                      />
-                    </div>
-                    <div className="mt-4 sm:mt-0 sm:ml-3">
-                      <button
-                        type="submit"
-                        className="block w-full rounded-md border border-transparent px-5 py-3 bg-indigo-600 text-base font-medium text-white shadow hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:px-10"
-                      >
-                        Notify me
-                      </button>
-                    </div>
-                  </form>
-                  <div className="mt-6">
-                    <div className="inline-flex items-center divide-x divide-gray-300">
-                      <div className="flex-shrink-0 flex pr-5">
-                        <StarIcon className="h-5 w-5 text-yellow-400" aria-hidden="true" />
-                        <StarIcon className="h-5 w-5 text-yellow-400" aria-hidden="true" />
-                        <StarIcon className="h-5 w-5 text-yellow-400" aria-hidden="true" />
-                        <StarIcon className="h-5 w-5 text-yellow-400" aria-hidden="true" />
-                        <StarIcon className="h-5 w-5 text-yellow-400" aria-hidden="true" />
-                      </div>
-                      <div className="min-w-0 flex-1 pl-5 py-1 text-sm text-gray-500 sm:py-3">
-                        <span className="font-medium text-gray-900">Rated 5 stars</span> by over{' '}
-                        <span className="font-medium text-indigo-600">500 beta users</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-   
+         <div>
 
 
-            </div> 
-    
-            <div className="sm:mx-auto sm:max-w-3xl sm:px-6">
-              <div className="py-12 sm:relative sm:mt-12 sm:py-16 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-
-              </div>
-            </div>
           </div>
-          <div className="bg-gray-50 overflow-hidden">
+          <div className="bg-black overflow-hidden">
       <div className="relative max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
        
 
         <div className="relative lg:grid lg:grid-cols-3 lg:gap-x-8">
           <div className="lg:col-span-1">
-            <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-              A better way to send money.
+            <h2 className="text-3xl font-matterregular tracking-tight text-white sm:text-4xl">
+              A better way to spend money.
             </h2>
           </div>
           <dl className="mt-10 space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-8 sm:gap-y-10 lg:mt-0 lg:col-span-2">
             {features.map((feature) => (
               <div key={feature.name}>
                 <dt>
-                  <div className="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                  <div className="flex items-center justify-center h-12 w-12 rounded-md bg-blue-200 text-black">
                     <feature.icon className="h-6 w-6" aria-hidden="true" />
                   </div>
-                  <p className="mt-5 text-lg leading-6 font-medium text-gray-900">{feature.name}</p>
+                  <p className="mt-5 text-lg leading-6 font-medium text-white">{feature.name}</p>
                 </dt>
-                <dd className="mt-2 text-base text-gray-500">{feature.description}</dd>
+                <dd className="mt-2 text-base text-gray-200">{feature.description}</dd>
               </div>
             ))}
           </dl>
