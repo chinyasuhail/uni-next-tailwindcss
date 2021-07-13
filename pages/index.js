@@ -49,6 +49,9 @@ export default function Home() {
 
 
 {/* BLOCK 1: BLOCK THAT ALWAYS MATHCES HEIGH OF THE SCREEN: BACKGROUND BLACK*/}
+
+{/* START NAVBAR: NAVBAR WITH UNI LOGO : BLACK*/}
+
 <div className="w-screen bg-black">
 <nav className=" bg-black mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-4 lg:max-w-7xl">
 
@@ -58,17 +61,19 @@ export default function Home() {
   </nav>
   </div>
   
+{/* END NAVBAR: NAVBAR WITH UNI LOGO : BLACK*/}
+
+{/* BEGIN HERO SECTION */}
+  
 <div className="flex flex-col-reverse justify-center bg-black min-h-screen  lg:bg-right lg:bg-contain lg:bg-hero-pattern-sm bg-hero-pattern-sm bg-no-repeat bg-contain bg-top">
-
-{/* NAVBAR: NAVBAR WITH UNI LOGO : BLACK*/}
-
-
-
-{/* HERO-TEXT */}
 
 <div className="overflow-hidden ">
 
 <div className="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-4 lg:max-w-7xl ">
+
+
+
+{/* BEGIN HERO SECTION TEXT */}
 
 
 <div className="mt-36">
@@ -87,52 +92,80 @@ Split your payments, not your dreams.
   </p>
 
 
+{/* END HERO SECTION TEXT */}
+
+{/* BEGIN HERO SECTION FORM */}
+
 <form action="#" className="mt-6 sm:max-w-lg sm:w-full sm:flex flex-col">
 
-
-
 <div className="min-w-0 flex-1 lg:mt-0 ">
-<label htmlFor="hero-email" className="sr-only">
-Phone Number
-</label>
-<input
-id="hero-email"
-type="number"
-maxLength="10"
-className="block w-full bg-gray-100 focus:bg-white border-gray-300 rounded-sm px-5 py-3  text-base text-gray-900 placeholder-gray-500 shadow-sm focus:border-green-500 focus:ring-green-500"
-placeholder="Enter Your Phone Number"
-required
-/>
+
+<label htmlFor="hero-email" className="sr-only">Phone Number</label>
+<input id="hero-email" type="number" maxLength="10" className="block w-full bg-gray-100 focus:bg-white border-gray-300 rounded-sm px-5 py-3  text-base text-gray-900 placeholder-gray-500 shadow-sm focus:border-green-500 focus:ring-green-500" placeholder="Enter Your Phone Number" required/>
 
 
 <div className="mt-2">
-<button
-type="submit"
-className="block w-full border  rounded-sm  px-5 py-3 bg-black text-white border-gray-500 text-base font-medium shadow hover:bg-gray-200 focus:outline-none focus:ring-2 hover:bg-white hover:text-black focus:ring-offset-2 sm:px-10"
->
+
+<button type="submit" className="block w-full border  rounded-sm  px-5 py-3 bg-black text-white border-gray-500 text-base font-medium shadow focus:outline-none focus:ring-2 hover:bg-white hover:text-black focus:ring-offset-2 sm:px-10">
 Download App
 </button>
-</div>
-</div>
-                  </form>
-
-
 
 </div>
-
 </div>
 
+</form>
 
-
-
-</div>
+{/* END HERO SECTION FORM */}
 
 </div>
 
 </div>
 
 
+
+
+</div>
+
+</div>
+
+</div>
+
+{/* END BEGIN HERO SECTION */}
+
+
+{/* BEGIN SECTION 2 */}
+
+
+
+
+<div className="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-4 lg:max-w-7xl ">
+<div className="bg-white min-h-80 flex flex-col  justify-center items-center py-4 pb-20">
+
+  
+<span className=" text-sm  font-matterregular my-2 py-4 text-gray-700">
+
+Uni Pay 1/3rd Card - Now open for Beta
+
+</span>
+
+<h1 className=" text-5xl font-semibold font-matterregular">
+  
+
+<span  style={uni_text}> It's different.</span>  <br></br>
+
+<span  style={uni_text}>It's unique.</span> <br></br>
+
+<span  style={uni_text}> It's powerful. </span><br></br>
+  
+  
+  </h1>
+
+</div>
+
+</div>
           
+
+
           
           
          <div>
