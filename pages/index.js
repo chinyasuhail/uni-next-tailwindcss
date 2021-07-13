@@ -58,7 +58,7 @@ export default function Home() {
   </nav>
   </div>
   
-<div className="flex flex-col bg-black max-h-screen pb-12 lg:bg-right lg:bg-contain lg:bg-hero-pattern-sm bg-hero-pattern-sm bg-no-repeat bg-contain bg-top">
+<div className="flex flex-col-reverse justify-center bg-black min-h-screen  lg:bg-right lg:bg-contain lg:bg-hero-pattern-sm bg-hero-pattern-sm bg-no-repeat bg-contain bg-top">
 
 {/* NAVBAR: NAVBAR WITH UNI LOGO : BLACK*/}
 
@@ -66,7 +66,7 @@ export default function Home() {
 
 {/* HERO-TEXT */}
 
-<div className="pb-4 overflow-hidden ">
+<div className="overflow-hidden ">
 
 <div className="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-4 lg:max-w-7xl ">
 
