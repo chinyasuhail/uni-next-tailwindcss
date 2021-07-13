@@ -42,7 +42,7 @@ export default function Home() {
 
 
 {/* BLOCK 1: BLOCK THAT ALWAYS MATHCES HEIGH OF THE SCREEN: BACKGROUND BLACK*/}
-<div className="flex flex-col bg-black min-h-screen w-screen pb-12 bg-right bg-hero-pattern bg-no-repeat bg-contain">
+<div className="flex flex-col bg-black min-h-screen w-screen pb-12 bg-right lg:bg-hero-pattern bg-hero-pattern-sm bg-no-repeat bg-cover bg-center">
 
 {/* NAVBAR: NAVBAR WITH UNI LOGO : BLACK*/}
 
@@ -68,8 +68,8 @@ export default function Home() {
 Pay 1/3rd card <br></br>
 is here 
   </h1>
-  <p className="mt-6 text-md-3 text-white font-matterregular">
-  Pay 1/3rd every month for NO EXTRA charges. <br></br>
+  <p className="mt-6 text-md-3 text-gray-200 font-matterregular">
+  Pay 1/3rd every month for NO EXTRA charges. 
 Split your payments, not your dreams.
   </p>
 
@@ -84,7 +84,7 @@ Full Name
 </label>
 <input
 id="hero-email"
-type="number"
+type="text"
 maxLength="10"
 className="block w-full border bg-gray-100 focus:bg-white border-gray-300  rounded-sm  px-5 py-3 text-base text-gray-900 placeholder-gray-500 shadow-sm focus:border-green-500 focus:ring-green-500"
 placeholder="Enter Your Full Name"
