@@ -99,19 +99,20 @@ Phone Number
 id="hero-email"
 type="number"
 maxLength="10"
-className="block w-full border bg-gray-100 focus:bg-white border-gray-300 rounded-sm px-5 py-3  text-base text-gray-900 placeholder-gray-500 shadow-sm focus:border-green-500 focus:ring-green-500"
+className="block w-full bg-gray-100 focus:bg-white border-gray-300 rounded-sm px-5 py-3  text-base text-gray-900 placeholder-gray-500 shadow-sm focus:border-green-500 focus:ring-green-500"
 placeholder="Enter Your Phone Number"
 required
 />
-</div>
+
 
 <div className="mt-2">
 <button
 type="submit"
-className="block w-full border border-transparent rounded-sm  px-5 py-3 bg-white text-black text-base font-medium shadow hover:bg-gray-200 focus:outline-none focus:ring-2 focus:bg-gray-400 focus:ring-offset-2 sm:px-10"
+className="block w-full border  rounded-sm  px-5 py-3 bg-black text-white border-gray-500 text-base font-medium shadow hover:bg-gray-200 focus:outline-none focus:ring-2 hover:bg-white hover:text-black focus:ring-offset-2 sm:px-10"
 >
 Download App
 </button>
+</div>
 </div>
                   </form>
 
