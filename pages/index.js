@@ -42,7 +42,7 @@ export default function Home() {
 
 
 {/* BLOCK 1: BLOCK THAT ALWAYS MATHCES HEIGH OF THE SCREEN: BACKGROUND BLACK*/}
-<div className="flex flex-col bg-black min-h-screen w-screen pb-12 bg-right lg:bg-hero-pattern bg-hero-pattern-sm bg-no-repeat bg-cover bg-center">
+<div className="flex flex-col bg-black min-h-screen w-screen pb-12 lg:bg-right lg:bg-contain lg:bg-hero-pattern bg-hero-pattern-sm bg-no-repeat bg-cover bg-center">
 
 {/* NAVBAR: NAVBAR WITH UNI LOGO : BLACK*/}
 
