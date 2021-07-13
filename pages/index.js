@@ -49,7 +49,7 @@ export default function Home() {
 <nav className="flex flex-col items-center px-6 w-screen bg-black  border-b border-gray-900 ">
   <img
   src="/uni.svg"
-  width="120" 
+  width="107" 
   className="ml-4 sm:ml-4"/>
   </nav>
 
@@ -60,18 +60,58 @@ export default function Home() {
 <div className="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-4 lg:max-w-7xl ">
 
 
-<div className="mt-20">
+<div className="mt-5">
 
 <div className="mt-6 sm:max-w-xl">
-  <h1 className=" text-6xl text-white font-matterregular  lg:text-8xl md:text-8xl to-purple-900">
-  India's first
-Pay 1/3rd card
+  <h1 className=" text-5xl text-white font-mattermedium  lg:text-7xl md:text-8xl to-purple-900">
+  India's first <br></br>
+Pay 1/3rd card <br></br>
 is here 
   </h1>
-  <p className="mt-6 text-xl text-gray-400">
-  Pay 1/3rd every month for NO EXTRA charges.
+  <p className="mt-6 text-md-3 text-white font-matterregular">
+  Pay 1/3rd every month for NO EXTRA charges. <br></br>
 Split your payments, not your dreams.
   </p>
+
+
+  <form action="#" className="mt-12 sm:max-w-lg sm:w-full sm:flex">
+                    <div className="min-w-0 flex-1">
+                      <label htmlFor="hero-email" className="sr-only">
+                        Email address
+                      </label>
+                      <input
+                        id="hero-email"
+                        type="email"
+                        className="block w-full border border-gray-300 rounded-md px-5 py-3 text-base text-gray-900 placeholder-gray-500 shadow-sm focus:border-green-500 focus:ring-green-500"
+                        placeholder="Enter Your Phone"
+                      />
+                    </div>
+                    <div className="mt-4 sm:mt-0 sm:ml-3">
+                      <button
+                        type="submit"
+                        className="block w-full rounded-md border border-transparent px-5 py-3 bg-green-600 text-base font-medium text-white shadow hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:px-10"
+                      >
+                        Download App
+                      </button>
+                    </div>
+                  </form>
+
+
+  <div className="mt-6">
+                    <div className="inline-flex items-center divide-x divide-gray-300">
+                      <div className="flex-shrink-0 flex pr-5">
+                        <StarIcon className="h-5 w-5 text-yellow-400" aria-hidden="true" />
+                        <StarIcon className="h-5 w-5 text-yellow-400" aria-hidden="true" />
+                        <StarIcon className="h-5 w-5 text-yellow-400" aria-hidden="true" />
+                        <StarIcon className="h-5 w-5 text-yellow-400" aria-hidden="true" />
+
+                      </div>
+                      <div className="min-w-0 flex-1 pl-5 py-1 text-sm text-gray-500 sm:py-3">
+                        <span className="font-medium text-white">Rated 4.7 stars</span> by over{' '}
+                        <span className="font-medium text-white">500 beta users</span>
+                      </div>
+                    </div>
+                  </div>
 </div>
 
 </div>
