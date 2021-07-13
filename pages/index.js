@@ -1,7 +1,7 @@
 
 import { ChevronRightIcon, StarIcon, GlobeAltIcon, LightningBoltIcon, MailIcon, ScaleIcon } from '@heroicons/react/solid'
 import Head from 'next/head'
-
+import Image from 'next/image'
 
 
 var uni_text = {"background":"-webkit-linear-gradient(102.18deg, #15B7A8 1.92%, #1CDEBD 31.37%, #40E1AE 48.4%, #FFF061 82.53%)","WebkitBackgroundClip":"text","WebkitTextFillColor":"transparent"}
@@ -36,9 +36,9 @@ const features = [
 ]
 
 const unifeatures = [
-  { feat: "It's different"},
-  { feat: "It's Unique"},
-  { feat: "It's powerful"},
+  { id: 1, feat: "It's different"},
+  { id: 2, feat: "It's Unique"},
+  { id: 3, feat: "It's powerful"},
 ]
 
 export default function Home() {
@@ -51,7 +51,8 @@ export default function Home() {
 
 <Head>
         <title>Uni Cards</title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width, user-scalable=no" />
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta name="description" content="Uni Cards"/>
       </Head>
 
 
@@ -63,9 +64,12 @@ export default function Home() {
 <div className="w-screen bg-black">
 <nav className=" bg-black mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-4 lg:max-w-7xl">
 
-  <img
+  <Image
   src="/uni.svg"
-  width="107"></img>
+  width="120"
+  height="60"
+  alt="Uni Cards Logo"
+  ></Image>
   </nav>
   </div>
   
@@ -160,7 +164,7 @@ Download App
 
 <div className=" text-5xl font-semibold font-matterregular">
 {unifeatures.map((unifeatures) => (
-  <span style={uni_text}>{unifeatures.feat} <br></br></span> 
+  <span key={unifeatures.id} style={uni_text}>{unifeatures.feat} <br></br></span> 
  ))}
 
 
