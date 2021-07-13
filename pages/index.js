@@ -50,7 +50,7 @@ export default function Home() {
   <img
   src="/uni.svg"
   width="107" 
-  className="ml-4 sm:ml-4"/>
+  className="ml-8"/>
   </nav>
 
 {/* HERO-TEXT */}
