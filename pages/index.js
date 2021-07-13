@@ -1,6 +1,6 @@
 
 import { ChevronRightIcon, StarIcon, GlobeAltIcon, LightningBoltIcon, MailIcon, ScaleIcon } from '@heroicons/react/solid'
-import Image from 'next/image'
+import Document, { Html, Head, Main, NextScript } from 'next/document'
 
 const features = [
   {
@@ -33,7 +33,14 @@ export default function Home() {
   return (
 
 
+  
+
 <div>
+
+
+
+
+
 {/* BLOCK 1: BLOCK THAT ALWAYS MATHCES HEIGH OF THE SCREEN: BACKGROUND BLACK*/}
 <div className="flex flex-col bg-black min-h-screen w-screen ">
 
@@ -43,12 +50,12 @@ export default function Home() {
   <img
   src="/uni.svg"
   width="120" 
-  className="lg:px-4"/>
+  className="ml-4 sm:ml-4"/>
   </nav>
 
 {/* HERO-TEXT */}
 
-<div className="pt-8 overflow-hidden">
+<div className="pt-4 overflow-hidden">
 
 <div className="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-4 lg:max-w-7xl ">
 
@@ -56,7 +63,7 @@ export default function Home() {
 <div className="mt-20">
 
 <div className="mt-6 sm:max-w-xl">
-  <h1 className=" text-6xl text-white font-matterregular  lg:text-8xl md:text-8xl">
+  <h1 className=" text-6xl text-white font-matterregular  lg:text-8xl md:text-8xl to-purple-900">
   India's first
 Pay 1/3rd card
 is here 
