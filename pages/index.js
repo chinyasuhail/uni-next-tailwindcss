@@ -139,7 +139,7 @@ Download App
 
 
 <div className="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-4 lg:max-w-7xl ">
-<div className="bg-white min-h-80 flex flex-col  justify-center items-center py-4 pb-20">
+<div className="bg-white min-h-80 flex flex-col  justify-center items-left py-4 pb-20">
 
   
 <span className=" text-sm  font-matterregular my-2 py-4 text-gray-700">
