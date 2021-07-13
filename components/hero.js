@@ -11,7 +11,7 @@ return (
 
 
 <div className=" flex flex-col items-left  justify-center h-screen  px-16 ">
-    <h1 className="text-7xl text-white ">
+    <h1 className="text-7xl text-white font-bold">
 
 
 India's first <br></br>

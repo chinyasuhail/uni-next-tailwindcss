@@ -3,6 +3,11 @@ module.exports = {
   purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    fontFamily: {
+      'matterbold': ['matterbold'],
+      'mattermedium' : ['mattermedium'],
+      'matterregular' : ['matterregular']
+     },
     extend: {
       backgroundImage: theme => ({
         'hero-pattern': "url('/hero.png')",
@@ -13,5 +18,8 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms'),
+    require('@tailwindcss/typography')
+  ],
 }
