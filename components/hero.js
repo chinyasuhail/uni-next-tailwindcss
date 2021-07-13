@@ -10,7 +10,7 @@ return (
 <Navbar></Navbar>
 
 
-<div className=" flex flex-col items-left  justify-center h-screen  px-16 -m-4">
+<div className=" flex flex-col items-left  justify-center h-screen  px-16 ">
     <h1 className="text-7xl text-white ">
 
 
