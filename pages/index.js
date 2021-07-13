@@ -2,6 +2,10 @@
 import { ChevronRightIcon, StarIcon, GlobeAltIcon, LightningBoltIcon, MailIcon, ScaleIcon } from '@heroicons/react/solid'
 import Head from 'next/head'
 
+
+
+var uni_text = {"background":"-webkit-linear-gradient(102.18deg, #15B7A8 1.92%, #1CDEBD 31.37%, #40E1AE 48.4%, #FFF061 82.53%)","WebkitBackgroundClip":"text","WebkitTextFillColor":"transparent"}
+
 const features = [
   {
     name: 'Competitive rates',
@@ -45,31 +49,37 @@ export default function Home() {
 
 
 {/* BLOCK 1: BLOCK THAT ALWAYS MATHCES HEIGH OF THE SCREEN: BACKGROUND BLACK*/}
-<div className="flex flex-col bg-black min-h-screen w-screen pb-12 lg:bg-right lg:bg-contain lg:bg-hero-pattern-sm bg-hero-pattern-sm bg-no-repeat bg-contain bg-center">
+<div className="w-screen bg-black">
+<nav className=" bg-black mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-4 lg:max-w-7xl">
+
+  <img
+  src="/uni.svg"
+  width="107"></img>
+  </nav>
+  </div>
+  
+<div className="flex flex-col bg-black max-h-screen pb-12 lg:bg-right lg:bg-contain lg:bg-hero-pattern-sm bg-hero-pattern-sm bg-no-repeat bg-contain bg-top">
 
 {/* NAVBAR: NAVBAR WITH UNI LOGO : BLACK*/}
 
-<nav className="flex flex-col items-center px-6 w-screen bg-black ">
-  <img
-  src="/uni.svg"
-  width="107" 
-  className="ml-8"/>
-  </nav>
+
 
 {/* HERO-TEXT */}
 
-<div className="pt-4 overflow-hidden">
+<div className="pb-4 overflow-hidden ">
 
 <div className="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-4 lg:max-w-7xl ">
 
 
-<div className="mt-5">
+<div className="mt-36">
 
 <div className="mt-6 sm:max-w-xl">
   <h1 className=" text-5xl text-white font-mattermedium  lg:text-7xl md:text-8xl to-purple-900">
   India's first <br></br>
-Pay 1/3rd card <br></br>
-is here 
+<span style={uni_text}>Pay 1/3rd </span>
+
+<br></br>
+card is here 
   </h1>
   <p className="mt-6 text-md-3 text-gray-200 font-matterregular">
   Pay 1/3rd every month for NO EXTRA charges. 
@@ -77,23 +87,9 @@ Split your payments, not your dreams.
   </p>
 
 
-<form action="#" className="mt-12 sm:max-w-lg sm:w-full sm:flex flex-col">
+<form action="#" className="mt-6 sm:max-w-lg sm:w-full sm:flex flex-col">
 
 
-
-<div className="min-w-0 flex-1 lg:mt-0 mb-2 ">
-<label htmlFor="hero-email" className="sr-only">
-Full Name
-</label>
-<input
-id="hero-email"
-type="text"
-maxLength="10"
-className="block w-full border bg-gray-100 focus:bg-white border-gray-300  rounded-sm  px-5 py-3 text-base text-gray-900 placeholder-gray-500 shadow-sm focus:border-green-500 focus:ring-green-500"
-placeholder="Enter Your Full Name"
-required
-/>
-</div>
 
 <div className="min-w-0 flex-1 lg:mt-0 ">
 <label htmlFor="hero-email" className="sr-only">
@@ -109,7 +105,7 @@ required
 />
 </div>
 
-<div className="mt-4">
+<div className="mt-2">
 <button
 type="submit"
 className="block w-full border border-transparent rounded-sm  px-5 py-3 bg-white text-black text-base font-medium shadow hover:bg-gray-200 focus:outline-none focus:ring-2 focus:bg-gray-400 focus:ring-offset-2 sm:px-10"
@@ -120,17 +116,7 @@ Download App
                   </form>
 
 
-  <div className="mt-6">
-                    <div className="inline-flex items-center divide-x divide-gray-600">
-          
-                      <a href='https://play.google.com/store/apps/details?id=cards.uni.app.credit&hl=en_IN&gl=US&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png' width="150"/></a> 
-                      
-                      <div className="min-w-0 flex-1 pl-5 py-1 text-sm text-gray-500 sm:py-3">
-                        <span className="font-medium text-white">Rated 4.7 stars by over 500 beta users </span> 
 
-                      </div>
-                    </div>
-                  </div>
 </div>
 
 </div>
