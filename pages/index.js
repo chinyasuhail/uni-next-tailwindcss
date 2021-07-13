@@ -1,6 +1,6 @@
 
 import { ChevronRightIcon, StarIcon, GlobeAltIcon, LightningBoltIcon, MailIcon, ScaleIcon } from '@heroicons/react/solid'
-import Document, { Html, Head, Main, NextScript } from 'next/document'
+import Head from 'next/head'
 
 const features = [
   {
@@ -37,7 +37,10 @@ export default function Home() {
 
 <div>
 
-
+<Head>
+        <title>Uni Cards</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width, user-scalable=no" />
+      </Head>
 
 
 

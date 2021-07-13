@@ -9,7 +9,7 @@ class MyDocument extends Document {
   render() {
     return (
         <Html lang="en">
-            <title>Uni Cards</title>
+    
         <Head />
         <body className="overflow-x-hidden">
           <Main />
