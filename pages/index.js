@@ -189,7 +189,7 @@ Download App
 
 {/* BEGIN SECTION 2 HERO  TEXT */} 
 
-<div className=" text-5xl font-semibold font-matterregular lg:text-8xl">
+<div className=" text-5xl font-semibold font-matterbold lg:text-8xl">
 {unifeatures.map((unifeatures) => (
   <span key={unifeatures.id} style={uni_text}>{unifeatures.feat} <br></br></span> 
  ))}
@@ -295,7 +295,7 @@ Download App
        
       
 
-          <h3 className="mt-4 lg:text-4xl text-xl font-extrabold font-matterregular text-black">
+          <h3 className="mt-4 lg:text-4xl text-xl font-semibold font-matterrbold text-black">
           Uni Pay 1/3rd card is accepted on <span className=" text-green-400 fo">99%</span> of the merchants <br></br> across the country that accept Visa cards.
           </h3>
 
