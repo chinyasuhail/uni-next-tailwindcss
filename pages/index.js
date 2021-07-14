@@ -219,7 +219,7 @@ Download App
                   <div className="-mt-6">
                     <div>
                       <span className="inline-flex items-center justify-center bg-black p-3 rounded-md shadow-lg">
-                      <img src="/bill.svg"></img>
+                      <img src="/bill.svg" alt="pay1/3rd"/>
                       </span>
                     </div>
                     <h3 className="mt-8 text-lg lg:text-2xl font-medium text-white tracking-tight">Pay in 3 parts</h3>
@@ -237,7 +237,7 @@ Download App
                   <div className="-mt-6">
                     <div>
                       <span className="inline-flex items-center justify-center p-3 rounded-md shadow-lg">
-                      <img src="/rewards.svg"></img>
+                      <img src="/rewards.svg" alt="Uni Rewards"/>
                       </span>
                     </div>
                     <h3 className="mt-8 text-lg lg:text-2xl font-medium text-white tracking-tight">1% Rewards when you Pay in Full</h3>
@@ -256,7 +256,7 @@ Download App
                   <div className="-mt-6">
                     <div>
                       <span className="inline-flex items-center justify-center p-3 bg-black rounded-md shadow-lg">
-                      <img src="/nofee.svg"></img>
+                      <img src="/nofee.svg" alt="Uni No Joining Fee"/>
                       </span>
                     </div>
                     <h3 className="mt-8 text-lg lg:text-2xl font-medium text-white tracking-tight">No Joining Fee</h3>
@@ -312,7 +312,7 @@ Download App
       <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 md:flex md:items-center md:justify-between lg:px-8">
         <div className="flex justify-center space-x-6 md:order-2">
           {navigation.map((item) => (
-            <a key={item.name} href={item.href} target="_blank" className="text-gray-400 hover:text-gray-500">
+            <a key={item.name} href={item.href} target="_blank" className="text-gray-400 hover:text-gray-500" rel="noreferrer">
               <span className="sr-only">{item.name}</span>
               <item.icon className="h-6 w-6" aria-hidden="true" />
             </a>
@@ -320,7 +320,7 @@ Download App
         </div>
         <div className="mt-8 md:mt-0 md:order-1">
           <p className="text-left text-base text-gray-700">&copy; 2021 Uniorbit Technologies Pvt Ltd.</p>
-          <p className="text-gray-400">Indiqube Sigma No.3/B, Nexus Koramangala 3rd Block SBI Colony,<br></br> Koramangala, Bengaluru, Karnataka 560034</p>
+          <p className="text-gray-600">Indiqube Sigma No.3/B, Nexus Koramangala 3rd Block SBI Colony,<br></br> Koramangala, Bengaluru, Karnataka 560034</p>
         </div>
       </div>
     </footer>
